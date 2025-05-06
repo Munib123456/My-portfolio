@@ -1,0 +1,369 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <div class="fixed-top-line"></div>
+
+    <!-- Meta & Title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Munib Ahmed | Tech Portfolio</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap">
+    <script type="text/javascript" src="darkmode.js" defer></script>
+</head>
+
+<body class="darkmode">
+    <!-- Tech Grid Background -->
+    <div class="tech-grid"></div>
+    
+    <!-- Theme Switch Button -->
+    <button id="theme-switch" aria-label="Toggle Dark Mode">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+            <path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+            <path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/>
+        </svg>
+    </button>
+    
+    <!-- Navigation Section -->
+    <nav id="desktop-nav" class="glass-card">
+        <div class="logo">Munib Ahmed</div>
+        <div class="logo-container">
+            <div class="logo"></div>
+            <div class="typing-container">
+                <span id="typewriter" class="code-text">Software Engineer</span>
+            </div>
+        </div>        
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link-hover">About</a></li>
+                <li><a href="#experience" class="nav-link-hover">Experience</a></li>
+                <li><a href="#projects" class="nav-link-hover">Projects</a></li>
+                <li><a href="#contact" class="nav-link-hover">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav" class="glass-card">
+        <div class="logo">Munib Ahmed</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links glass-card">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <section id="profile">
+        <div class="section__pic-container glass-card animate-float">
+            <img src="./Asset/466847819_555338487447880_297119911535279692_n.jpg" alt="Munib Ahmed profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Munib Ahmed</h1>
+            <h2 id="typewriter" class="section__text__p2 code-text">Computer Science Enthusiast!</h2>
+
+            <div class="btn-container">
+                <button class="btn btn-color-2 gradient-btn" id="downloadCvBtn">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1 gradient-btn" onclick="location.href='#contact'">
+                    Contact Info
+                </button>
+            </div>
+
+            <div id="socials-container">
+                <img src="./Asset/github.png" alt="My Github profile" class="icon pulse-glow" onclick="location.href='https://github.com'" />
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon pulse-glow" onclick="location.href='https://www.linkedin.com/in/munib-ahmed-53a568294/'" />
+            </div>
+        </div>
+        <div class="profile-timeline-container">
+            <div class="profile-line pulse-glow"></div>
+            <div class="profile-circle pulse-glow"></div>
+            <div class="profile-circle pulse-glow"></div>
+            <div class="profile-circle pulse-glow"></div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow pulse-glow" onclick="location.href='./#about'" />
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <span class="about-emoji animate-float">👨🏾‍💻</span>
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container glass-card">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+                        <h3 class="code-text">Technical Skills</h3>
+                        <ul style="list-style: none; padding: 0; margin: 0;">
+                            <li><strong class="code-text">Programming:</strong> Python, JavaScript, PHP, SQL, HTML, CSS</li>
+                            <li><strong class="code-text">Databases:</strong> MySQL, MongoDB, Azure</li>
+                            <li><strong class="code-text">Tools:</strong> Power BI, Postman, Microsoft Azure, XAMPP, Nuwebspace</li>
+                            <li><strong class="code-text">Version Control:</strong> Git, GitHub</li>
+                            <li><strong class="code-text">Productivity:</strong> MS Office (Word, PowerPoint)</li>
+                            <li><strong class="code-text">Cloud:</strong> AWS, Azure</li>
+                        </ul>
+                    </div>
+                    <div class="details-container glass-card">
+                        <img src="./assets/education.png" alt="Education icon" class="icon" />
+                        <h3 class="code-text">Education</h3>
+                        <p>B.Sc. Computer Science at Northumbria University <br>On track to recieve a first class honors</p>
+                    </div>
+                </div>
+                <div class="text-container glass-card">
+                    <p>Self-driven Computer Science student with practical experience delivering real-world software across the full stack including browser extensions, form-based web apps, and back-end systems using <span class="code-text">Python</span>, <span class="code-text">Flask</span>, <span class="code-text">PHP</span>, and <span class="code-text">JavaScript</span>. Skilled at writing clean, maintainable code and working in agile teams with Git and GitHub. Comfortable tackling fast-paced challenges and debugging under pressure. Strong foundation in OOP, SQL, and system design, with a growing interest in secure, scalable, cloud-native software. Eager to contribute to mission-critical tools in financial tech and communication and ready to learn fast and deliver even faster.
+
+                        Beyond my technical pursuits, I am passionate about fitness, regularly going to the gym and running to maintain a disciplined and focused mindset. I also actively manage my investment portfolio, staying up to date with market trends and financial strategies. My experience includes developing a PageRank algorithm in Python, optimising search efficiency by 55% and enhancing my understanding of graph theory and algorithm performance. With a strong drive for continuous learning, I am eager to contribute to impactful projects that blend technology with business efficiency.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow pulse-glow" onclick="location.href='./#experience'" />
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience and Certifications</h1>
+        <div class="time-line">
+            <div class="container">
+                <div class="text-content glass-card">
+                    <h2 class="code-text">Mcdonalds </h2>
+                    <p> Resolved 95% of technical till and card machine issues independently, maintaining system uptime during peak hours.
+                        Installed software updates and performed system troubleshooting under high-pressure conditions, ensuring smooth operation.
+                        </p>
+                </div>
+            </div>
+            <div class="container" style="--dly:1s">
+                <div class="text-content glass-card">
+                    <h2 class="code-text">Virtual Intern | J.P. Morgan Software Engineering Program (Forage)</h2>
+                    <p>Developed a real-time market data visualization tool using J.P. Morgan's Perspective library, <span class="code-text">React</span>, and <span class="code-text">Python</span>, improving data rendering speed and application reliability by diagnosing and resolving critical repo issues.</p>
+                </div>
+            </div>
+            <div class="container" style="--dly:2s">
+                <div class="text-content glass-card">
+                    <h2 class="code-text">Full-Stack Developer | Journaling App & Website | 2025</h2>
+                    <p>Built a fully responsive, friendly journaling app using <span class="code-text">React</span>, <span class="code-text">Tailwind CSS</span>, and <span class="code-text">Vite</span>, featuring full CRUD functionality and persistent browser storage. 
+ 
+                        Developed and deployed a companion promotional website using <span class="code-text">HTML</span>, <span class="code-text">CSS</span>, <span class="code-text">JavaScript</span>, and <span class="code-text">PHP</span>, including dynamic review rendering from a JSON file, smooth navigation, and consistent UI styling. 
+                         
+                        Demonstrated strong full-stack development capabilities and independently learned to debug, test, and deploy web applications on a live hosting environment. 
+                        </p>
+                </div>
+            </div>
+            <div class="container" style="--dly:3s">
+                <div class="text-content glass-card">
+                    <h2 class="code-text">Project Lead | Chrome Extension for Jesmond Community CIC | 2025 </h2>
+                    <p>Led a 7-member team to design and deliver a live Chrome extension translating corporate text into plain English, resolving key client communication issues.
+
+                        Secured project approval through competitive pitching and maintained direct client liaison throughout development.
+                        
+                        Managed agile workflows, progress reporting, and team coordination to deliver the project 100% on time.
+                        
+                        Developed the extension using <span class="code-text">JavaScript</span>, <span class="code-text">PHP</span>, <span class="code-text">SQLite</span>, and external APIs, achieving a user-friendly and accessible solution adopted by the client. 
+                        </p>
+                </div>
+            </div>
+            <div class="container" style="--dly:4s">
+                <div class="text-content glass-card">
+                    <h2 class="code-text">Backend Developer | CHI 2023 Conference REST API | 2025</h2>
+                    <p>Developed a RESTful API in <span class="code-text">PHP</span> with <span class="code-text">SQLite</span>, following PSR-1/12 standards and deployed on Nuwebspace (backend design, deployment). 
+ 
+                        Used OOP and the Front Controller pattern to build secure CRUD endpoints with clean URLs, API key auth, and <span class="code-text">JSON</span> output (secure architecture, API development). 
+                         
+                        Added search, pagination, and award assignment features; delivered full documentation and robust error handling (debugging, documentation). 
+                        </p>
+                </div>
+            </div>
+            <div class="container" style="--dly:5s">
+                <div class="text-content glass-card">
+                    <h2 class="code-text">App Developer | Bicycle Factory Application | 2024 - 2025</h2>
+                    <p>Built a production management system in <span class="code-text">Python</span> with <span class="code-text">PySide6</span>, using OOP to develop scalable modules for inventory, orders, and real-time stock alerts. Resolved complex workflow bugs, improving inventory reliability and earning a 76% grade for functionality and design.
+                       Resolved stock misallocation bugs reducing inventory errors by 40%.
+                        </p>
+                </div>
+            </div>
+        </div> 
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow pulse-glow" onclick="location.href='./#projects'" />
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="card-container">
+            <div class="card glass-card">
+                <div class="card-background" style="background-image: url('assets/pending.png');"></div>
+                <div class="content">
+                    <div class="card-category code-text">Project 1</div>
+                    <h3 class="card-heading">Pending</h3>
+                </div>
+            </div>
+            <div class="card glass-card">
+                <div class="card-background" style="background-image: url('assets/pending.png');"></div>
+                <div class="content">
+                    <div class="card-category code-text">Project 2</div>
+                    <h3 class="card-heading">Pending</h3>
+                </div>
+            </div>
+            <div class="card glass-card">
+                <div class="card-background" style="background-image: url('assets/pending.png');"></div>
+                <div class="content">
+                    <div class="card-category code-text">Project 3</div>
+                    <h3 class="card-heading">Pending</h3>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow pulse-glow" onclick="location.href='./#contact'"/>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container glass-card">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon pulse-glow" />
+                <p><a href="mailto:ahmedmunib61gmail.com" class="code-text">ahmedmunib61gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon pulse-glow" />
+                <p><a href="https://www.linkedin.com/in/munib-ahmed-53a568294/" class="code-text">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="glass-card">
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about" class="nav-link-hover">About</a></li>
+                    <li><a href="#experience" class="nav-link-hover">Experience</a></li>
+                    <li><a href="#projects" class="nav-link-hover">Projects</a></li>
+                    <li><a href="#contact" class="nav-link-hover">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Munib Ahmed. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    
+    <!-- Particle effects for tech feel -->
+    <div id="particles-js"></div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof particlesJS !== 'undefined') {
+                particlesJS("particles-js", {
+                    "particles": {
+                        "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+                        "color": { "value": "#9b87f5" },
+                        "shape": { "type": "circle" },
+                        "opacity": { "value": 0.5, "random": false },
+                        "size": { "value": 3, "random": true },
+                        "line_linked": {
+                            "enable": true,
+                            "distance": 150,
+                            "color": "#9b87f5",
+                            "opacity": 0.4,
+                            "width": 1
+                        },
+                        "move": {
+                            "enable": true,
+                            "speed": 2,
+                            "direction": "none",
+                            "random": false,
+                            "straight": false,
+                            "out_mode": "out",
+                            "bounce": false
+                        }
+                    },
+                    "interactivity": {
+                        "detect_on": "canvas",
+                        "events": {
+                            "onhover": { "enable": true, "mode": "grab" },
+                            "onclick": { "enable": true, "mode": "push" },
+                            "resize": true
+                        },
+                        "modes": {
+                            "grab": { "distance": 140, "line_linked": { "opacity": 1 } },
+                            "push": { "particles_nb": 4 }
+                        }
+                    },
+                    "retina_detect": true
+                });
+            }
+        });
+    </script>
+    
+    <!-- Typing effect -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const typewriterElement = document.getElementById('typewriter');
+            if (typewriterElement) {
+                const texts = [
+  "Collaborative Developer",
+  "Passionate Technologist",
+  "Always Learning & Adapting",
+  "Creative Problem Solver",
+  "Code-Driven Builder"
+];
+                let textIndex = 0;
+                let charIndex = 0;
+                let isDeleting = false;
+                let typingSpeed = 10;
+                
+                function typeEffect() {
+                    const currentText = texts[textIndex];
+                    
+                    if (isDeleting) {
+                        typewriterElement.textContent = currentText.substring(0, charIndex-1);
+                        charIndex--;
+                    } else {
+                        typewriterElement.textContent = currentText.substring(0, charIndex+1);
+                        charIndex++;
+                    }
+                    
+                    if (!isDeleting && charIndex === currentText.length) {
+                        isDeleting = true;
+                        typingSpeed = 10;
+                        setTimeout(typeEffect, 1500); // Pause at end of word
+                    } else if (isDeleting && charIndex === 0) {
+                        isDeleting = false;
+                        textIndex = (textIndex + 1) % texts.length;
+                        typingSpeed = 10;
+                        setTimeout(typeEffect, 500); // Pause before typing next word
+                    } else {
+                        setTimeout(typeEffect, typingSpeed);
+                    }
+                }
+                
+                // Start the typing effect
+                setTimeout(typeEffect, 1000);
+            }
+        });
+    </script>
+</body>
+
+</html>
